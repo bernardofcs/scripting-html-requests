@@ -1,3 +1,4 @@
+var https = require('https');
 module.exports = function getHTML (options, callback) {
   var body = '';
   var innerCallback = function(response) {
@@ -9,5 +10,5 @@ module.exports = function getHTML (options, callback) {
       callback(body);
     })
   }
-  https.request(requestOptions, innerCallback).end();
+  https.request(options, innerCallback).end();
 };
