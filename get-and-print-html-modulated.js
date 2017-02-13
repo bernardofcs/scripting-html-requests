@@ -22,7 +22,7 @@ function getAndPrintHTML (options) {
     })
   }
 
-  https.request(requestOptions, callback).end();
+  https.request(options, callback).end();
 
 }
 

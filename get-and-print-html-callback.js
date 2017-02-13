@@ -19,7 +19,7 @@ var body = '';
     })
   }
 
-  https.request(requestOptions, innerCallback).end();
+  https.request(options, innerCallback).end();
 }
 
 function printHTML(html){
